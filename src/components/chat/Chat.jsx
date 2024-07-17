@@ -7,7 +7,7 @@ const [open,setOpen] = useState(false);
 const [text,setText] = useState("");
 
 const handleEmoji = e => {
-    setText((prev) => + e.emoji);
+    setText((prev) => prev + e.emoji);
     setOpen(false)
 }
 
@@ -27,27 +27,58 @@ const handleEmoji = e => {
                     <img src="./info.png" alt="" />
                 </div>
             </div>
-            <div className="center"></div>
-            <div className="bottom">
-                <div className="icons">
-                    <img src="./img.png" alt="" className="" />
-                    <img src="./camera.png" alt="" className="" />
-                    <img src="./mic.png" alt="" className="" />
+            <div className="center">
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
                 </div>
-                <input 
-                    type="text" 
-                    placeholder="type a message..."
-                    value={text}
-                    onChange={(e) => setText(e.target.value)} />
-                <div className="emoji">
-                    <img 
-                        src="./emoji.png" 
-                        alt="" 
-                        onClick={() => setOpen((prev) => !prev)}
-                    />
-                    <EmojiPicker open={open} onEmojiClick={handleEmoji}/>
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
                 </div>
-                <button className="sendbutton">Send</button>
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+                <div className="message">
+                    <img src="./avatar.png" alt="" />
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
+                <div className="message own">
+                    <div className="texts">
+                        <p>
+                        Lorem ipsum dolor sit amet. Vel dolores aperiam et culpa ducimus aut corporis nobis aut veniam aliquid ab neque alias et perspiciatis voluptas ab accusamus dicta. Sed molestiae ipsam et nihil odio id dolorum numquam est fugiat eaque eum error impedit aut odio delectus hic distinctio voluptatem.
+                        </p>
+                        <span>1 min ago</span>
+                    </div>
+                </div>
             </div>
         </div>
     )
